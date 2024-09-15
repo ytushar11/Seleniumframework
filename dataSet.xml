@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="purchase"/>
+		</run>
+	</groups>
+	<test thread-count="5" name="ErrorValidation">
+		<classes>
+			<class
+				name="automationProject.SeleniumTestNgFramework.ErrorValidation" />
+
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="Standalonetest">
+		<classes>
+
+			<class
+				name="automationProject.SeleniumTestNgFramework.StandaloneTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
